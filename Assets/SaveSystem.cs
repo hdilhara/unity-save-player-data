@@ -10,6 +10,8 @@ public static class SaveSystem
     {
         BinaryFormatter formatter = new BinaryFormatter();
 
+        // unity provides path that system independent so
+        // we can use this system independently
         string path = Application.persistentDataPath + "/player.fun";
 
         FileStream stream = new FileStream(path, FileMode.Create);
